@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#b4daed"
+    tools:context="com.baruk.dwarf.mcdonalds.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:id="@+id/scrMd"
+        >
+       <TableLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:stretchColumns="1">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="216dp"
+        app:srcCompat="@drawable/android5"
+        android:id="@+id/imageView"
+        android:layout_marginTop="1dp"
+        android:scaleType="centerCrop"
+
+        />
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="1dp">
+
+    <TextView
+        android:text="Украина была 102-й страной, где начала развиваться сеть McDonald’s. 24 мая 1997 года в Киеве открылась первая на Украине закусочная «Макдоналдс»[16]. Ныне 75 закусочных находится в 23 городах."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textColor="#000000"
+        android:id="@+id/McText"
+        />
+        <Button
+            android:id="@+id/call"
+            android:text="Сделать звонок"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary" />
+        <Button
+            android:id="@+id/action_send_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Отправить сообщение"
+            android:textStyle="bold"
+            android:background="@color/colorAccent" />
+
+        <Button
+            android:id="@+id/map"
+            android:text="Показать на карте"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_orange_light" />
+            />
+        <TextView
+            android:text="Время работы 06 - 00"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:id="@+id/McTime"
+            android:textColor="#000000"
+            />
+
+
+</LinearLayout>
+       </TableLayout>
+    </ScrollView>
+</LinearLayout>
